@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Uploaded evidence (keep the folders, ignore their contents)
+server/uploads/images/*
+!server/uploads/images/.gitkeep
+server/uploads/videos/*
+!server/uploads/videos/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.stackdump
+
+# Test / local artifacts
+test-evidence.png
+coverage/
+.cache/
+.tmp/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes
